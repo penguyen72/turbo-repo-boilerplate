@@ -19,7 +19,11 @@ app.use(express.json());
 app.use('/api', router);
 
 router.get('/', (req, res) => {
-  res.status(200).send('This is the API root!');
+  try {
+    res.status(200).send('This is the API root!');
+  } catch {
+    res.status(500).send('Internal Server Error');
+  }
 });
 
 app.listen(PORT, () => {
