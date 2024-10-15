@@ -16,7 +16,9 @@ function App() {
       <div className="grid-item">
         <pre>{JSON.stringify({}, null, 2)}</pre>
       </div>
-      <div className="grid-item">{JSON.stringify({}, null, 2)}</div>
+      <div className="grid-item">
+        <pre>{JSON.stringify({}, null, 2)}</pre>
+      </div>
     </div>
   );
 }
