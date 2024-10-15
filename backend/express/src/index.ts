@@ -3,7 +3,7 @@ import dotenv from 'dotenv';
 import cors from 'cors';
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
-import db from 'db';
+import { createUser, getUser, getCars } from 'db';
 
 dotenv.config({ path: '../../.env' });
 
