@@ -14,9 +14,11 @@ function App() {
         <p className="form-error">Could Not Login User</p>
       </div>
       <div className="grid-item">
+        <p>Token</p>
         <pre>{JSON.stringify({}, null, 2)}</pre>
       </div>
       <div className="grid-item">
+        <p>Cars</p>
         <pre>{JSON.stringify({}, null, 2)}</pre>
       </div>
     </div>
