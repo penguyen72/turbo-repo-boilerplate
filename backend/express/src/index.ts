@@ -8,6 +8,7 @@ import db from 'db';
 dotenv.config({ path: '../../.env' });
 
 const router = express.Router();
+const saltRounds = 10;
 
 const app = express();
 const PORT = process.env.PORT ?? 8000;
