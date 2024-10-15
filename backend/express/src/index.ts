@@ -1,6 +1,9 @@
 import express from 'express';
 import dotenv from 'dotenv';
 import cors from 'cors';
+import bcrypt from 'bcrypt';
+import jwt from 'jsonwebtoken';
+import db from 'utils';
 
 dotenv.config();
 
@@ -16,7 +19,7 @@ app.use(express.json());
 app.use('/api', router);
 
 router.get('/', (req, res) => {
-  res.send('This is the API root!');
+  res.status(200).send('This is the API root!');
 });
 
 app.listen(PORT, () => {
