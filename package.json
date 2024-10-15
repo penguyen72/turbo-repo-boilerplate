@@ -1,5 +1,5 @@
 {
-  "name": "turbo-repo-boilerplate",
+  "name": "@tesla/turborepo",
   "private": true,
   "scripts": {
     "build": "turbo build",
@@ -17,7 +17,10 @@
   },
   "packageManager": "npm@10.2.0",
   "workspaces": [
-    "apps/*",
-    "packages/*"
-  ]
+    "frontend/*",
+    "backend/*"
+  ],
+  "dependencies": {
+    "json-server": "^1.0.0-beta.3"
+  }
 }

@@ -1,0 +1,3 @@
+{
+  "extends": "@tesla/typescript-config/nextjs.json"
+}
