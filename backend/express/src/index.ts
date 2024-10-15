@@ -3,9 +3,9 @@ import dotenv from 'dotenv';
 import cors from 'cors';
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
-import db from 'utils';
+import db from 'db';
 
-dotenv.config();
+dotenv.config({ path: '../../.env' });
 
 const router = express.Router();
 
