@@ -4,22 +4,12 @@ import './App.css';
 
 function App() {
   return (
-    <div className="container">
-      <div className="grid-item">
-        <p className="form-success">User Successfully Signed Up</p>
-        <p className="form-error">Could Not Sign Up User</p>
+    <div className="grid grid-cols-2 h-full bg-gray-100 gap-1">
+      <div className="flex flex-col bg-white items-center">
+        <p className="text-2xl font-bold my-12">Sign In</p>
       </div>
-      <div className="grid-item">
-        <p className="form-success">User Successfully Logged In</p>
-        <p className="form-error">Could Not Login User</p>
-      </div>
-      <div className="grid-item">
-        <p>Token</p>
-        <pre>{JSON.stringify({}, null, 2)}</pre>
-      </div>
-      <div className="grid-item">
-        <p>Cars</p>
-        <pre>{JSON.stringify({}, null, 2)}</pre>
+      <div className="flex flex-col bg-white items-center">
+        <p className="text-2xl font-bold my-12">Cars</p>
       </div>
     </div>
   );

@@ -36,6 +36,5 @@ This will start up the following:
 
 - [bcrypt](https://www.npmjs.com/package/bcrypt)
 - [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken)
-- [json-server](https://www.npmjs.com/package/json-server)
 - [expressjs](https://expressjs.com/)
 - [js-cookie](https://www.npmjs.com/package/js-cookie/v/2.2.1)
