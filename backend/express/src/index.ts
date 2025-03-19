@@ -25,7 +25,7 @@ router.get('/', (req, res) => {
   }
 });
 
-router.get('/register', (req, res) => {
+router.post('/register', async (req, res) => {
   try {
     res.status(200).send('Register user');
   } catch {
@@ -33,7 +33,7 @@ router.get('/register', (req, res) => {
   }
 });
 
-router.get('/get-cars', (req, res) => {
+router.get('/get-cars', async (req, res) => {
   try {
     res.status(200).send('Returns cars');
   } catch {
