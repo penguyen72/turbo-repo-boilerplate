@@ -1,14 +1,12 @@
 import express from 'express';
 import dotenv from 'dotenv';
 import cors from 'cors';
-import bcrypt from 'bcrypt';
-import jwt from 'jsonwebtoken';
+import { hashPassword, comparePassword, generateToken, verifyToken } from 'lib';
 import { createUser, getUser, getCars } from 'db';
 
 dotenv.config({ path: '../../.env' });
 
 const router = express.Router();
-const saltRounds = 10;
 
 const app = express();
 const PORT = process.env.PORT ?? 8000;
@@ -22,6 +20,22 @@ app.use('/api', router);
 router.get('/', (req, res) => {
   try {
     res.status(200).send('This is the API root!');
+  } catch {
+    res.status(500).send('Internal Server Error');
+  }
+});
+
+router.get('/register', (req, res) => {
+  try {
+    res.status(200).send('Register user');
+  } catch {
+    res.status(500).send('Internal Server Error');
+  }
+});
+
+router.get('/get-cars', (req, res) => {
+  try {
+    res.status(200).send('Returns cars');
   } catch {
     res.status(500).send('Internal Server Error');
   }
