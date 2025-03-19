@@ -1,5 +1,5 @@
 {
-  "name": "@tesla/database",
+  "name": "@lucid/database",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -11,8 +11,8 @@
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "@tesla/eslint-config": "*",
-    "@tesla/typescript-config": "*",
+    "@lucid/eslint-config": "*",
+    "@lucid/typescript-config": "*",
     "@eslint/js": "^9.11.1",
     "@types/react": "^18.3.10",
     "@types/react-dom": "^18.3.0",

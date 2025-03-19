@@ -1,5 +1,5 @@
 {
-  "extends": "@tesla/typescript-config/nextjs.json",
+  "extends": "@lucid/typescript-config/nextjs.json",
   "compilerOptions": {
     "target": "es6",
     "module": "NodeNext",

@@ -1,5 +1,5 @@
 {
-  "name": "@tesla/web",
+  "name": "@lucid/web",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -16,8 +16,8 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.11.1",
-    "@tesla/eslint-config": "*",
-    "@tesla/typescript-config": "*",
+    "@lucid/eslint-config": "*",
+    "@lucid/typescript-config": "*",
     "@types/react": "^18.3.10",
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.3.2",

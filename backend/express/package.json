@@ -1,5 +1,5 @@
 {
-  "name": "@tesla/express",
+  "name": "@lucid/express",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -24,8 +24,8 @@
     "uuid": "^10.0.0"
   },
   "devDependencies": {
-    "@tesla/eslint-config": "*",
-    "@tesla/typescript-config": "*",
+    "@lucid/eslint-config": "*",
+    "@lucid/typescript-config": "*",
     "@types/cors": "^2",
     "@types/express": "^4",
     "@types/node": "^20",

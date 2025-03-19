@@ -12,11 +12,11 @@ npm install
 
 This repo includes the following:
 
-- `@tesla/web`: a [Vite](https://vite.dev/) application
-- `@tesla/database`: a [json-server](https://www.npmjs.com/package/json-server) database
-- `@tesla/express`: an [expressjs](https://expressjs.com/) server
-- `@tesla/eslint-config`: `eslint` configurations
-- `@tesla/typescript-config`: `typescript` configurations
+- `@lucid/web`: a [Vite](https://vite.dev/) application
+- `@lucid/database`: a [json-server](https://www.npmjs.com/package/json-server) database
+- `@lucid/express`: an [expressjs](https://expressjs.com/) server
+- `@lucid/eslint-config`: `eslint` configurations
+- `@lucid/typescript-config`: `typescript` configurations
 
 ### Develop
 

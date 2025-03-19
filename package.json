@@ -1,5 +1,5 @@
 {
-  "name": "@tesla/turborepo",
+  "name": "@lucid/turborepo",
   "private": true,
   "scripts": {
     "build": "turbo build",
