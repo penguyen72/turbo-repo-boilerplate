@@ -1,7 +1,7 @@
 import express from 'express';
 import dotenv from 'dotenv';
 import cors from 'cors';
-import { hashPassword, comparePassword, generateToken, verifyToken } from 'lib';
+import { createSalt, hashPassword, comparePassword, generateToken, verifyToken } from '@lucid/auth';
 import { createUser, getUser, getCars } from 'db';
 
 dotenv.config({ path: '../../.env' });
