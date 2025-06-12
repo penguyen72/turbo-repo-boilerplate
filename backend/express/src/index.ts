@@ -20,6 +20,11 @@ router.get('/', async (req, res) => {
   res.status(200).send('Hello, World!');
 });
 
+router.get('/todos', async (req, res) => {
+  const todos = await getTodos();
+  res.status(200).json(todos);
+});
+
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
