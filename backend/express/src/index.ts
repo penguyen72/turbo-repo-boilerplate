@@ -1,7 +1,7 @@
 import express from 'express';
 import dotenv from 'dotenv';
 import cors from 'cors';
-import {} from 'db';
+import { getTodos, getTodo, createTodo, updateTodo, deleteTodo } from 'db';
 
 dotenv.config({ path: '../../.env' });
 
