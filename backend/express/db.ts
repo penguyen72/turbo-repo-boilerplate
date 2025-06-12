@@ -1,33 +1,29 @@
 import axios from 'axios';
-import { Car, User } from 'schema';
+import { Todo } from 'schema';
 import { v4 as uuidv4 } from 'uuid';
 
-/*
-This function returns a User given a username.
-The return value is a promise for an array containing a single user.
-*/
-export async function getUser(username: string): Promise<User[]> {
-  const params = new URLSearchParams({
-    username,
-  });
-  const response = await axios.get(`http://localhost:3000/users?${params.toString()}`);
+export async function getTodos(): Promise<Todo[]> {
+  const response = await axios.get(`http://localhost:3000/todos`);
   return response.data;
 }
 
-/*
-This function creates a user given a username and password.
-The return value is a promise for a user 
-*/
-export async function createUser(username: string, password: string): Promise<User> {
+export async function getTodo(id: string): Promise<Todo[]> {
+  const params = new URLSearchParams({ id });
+  const response = await axios.get(`http://localhost:3000/todos?${params.toString()}`);
+  return response.data;
+}
+
+export async function createTodo(description: string): Promise<Todo> {
   const id = uuidv4();
-  const response = await axios.post('http://localhost:3000/users', { id, username, password });
+  const response = await axios.post('http://localhost:3000/todos', { id, description, completed: false });
   return response.data;
 }
 
-/*
-This function returns a list of cars currently in the database
-*/
-export async function getCars(): Promise<Car> {
-  const response = await axios.get('http://localhost:3000/cars');
+export async function updateTodo(id: string, updatedFields: Partial<Todo>): Promise<Todo> {
+  const response = await axios.patch(`http://localhost:3000/todos/${id}`, updatedFields);
   return response.data;
+}
+
+export async function deleteTodo(id: string): Promise<void> {
+  await axios.delete(`http://localhost:3000/todos/${id}`);
 }

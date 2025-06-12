@@ -1,61 +1,9 @@
 {
-  "users": [
+  "todo": [
     {
-      "id": "1",
-      "username": "admin",
-      "password": "password"
-    }
-  ],
-  "cars": [
-    {
-      "make": "Tesla",
-      "model": "Model S",
-      "year": 2022
-    },
-    {
-      "make": "Tesla",
-      "model": "Model 3",
-      "year": 2024
-    },
-    {
-      "make": "Tesla",
-      "model": "Model X",
-      "year": 2021
-    },
-    {
-      "make": "Tesla",
-      "model": "Model Y",
-      "year": 2023
-    },
-    {
-      "make": "Tesla",
-      "model": "Cybertruck",
-      "year": 2024
-    },
-    {
-      "make": "Tesla",
-      "model": "Roadster",
-      "year": 2022
-    },
-    {
-      "make": "Tesla",
-      "model": "Model 3 Performance",
-      "year": 2023
-    },
-    {
-      "make": "Tesla",
-      "model": "Model S Plaid",
-      "year": 2021
-    },
-    {
-      "make": "Tesla",
-      "model": "Model X Plaid",
-      "year": 2023
-    },
-    {
-      "make": "Tesla",
-      "model": "Model Y Long Range",
-      "year": 2024
+      "id": 1,
+      "description": "laundry",
+      "completed": false
     }
   ]
 }

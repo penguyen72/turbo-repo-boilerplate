@@ -1,11 +1,5 @@
-export type User = {
-  id: string;
-  username: string;
-  password: string;
-};
-
-export type Car = {
-  make: string;
-  model: string;
-  year: number;
+export type Todo = {
+  id: number;
+  description: string;
+  completed: boolean;
 };
